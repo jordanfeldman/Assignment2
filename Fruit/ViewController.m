@@ -8,7 +8,10 @@
 
 #import "ViewController.h"
 #import "Fruit.h"
-
+#import "Pumpkin.h"
+#import "Onion.h"
+#import "Potato.h"
+;
 @interface ViewController ()
 @property (nonatomic, strong) NSMutableArray *cart;
 
@@ -21,14 +24,30 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     self.cart = [[NSMutableArray alloc] init];
-    NSString *itemName;
-    NSString *fruitName = @"Bananas";
+    //NSString *itemName;
+    //NSString *fruitName = @"Bananas";
     
-    for (int i = 0; i<50; i++) {
+    
+    
+    Pumpkin *pumpkin = [[Pumpkin alloc] init];
+    [self.cart addObject:pumpkin];
+    
+    Onion *onion = [[Onion alloc] init];
+    [self.cart addObject:onion];
+    
+    Potato *potato = [[Potato alloc] init];
+    [self.cart addObject:potato];
+    
+    
+    
+    
+    /*
+     for (int i = 0; i<50; i++) {
         itemName = [[NSString alloc] initWithFormat:@"%@ %d", fruitName, i];
         Fruit *tempFruit = [[Fruit alloc] initWithName:itemName andShape:@"Curved" andColor:@"Yellow"];
         [self.cart addObject:tempFruit];
     }
+     */
 }
 
 - (void)didReceiveMemoryWarning
