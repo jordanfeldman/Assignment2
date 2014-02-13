@@ -189,6 +189,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = Pitt;
+				TargetAttributes = {
+					8B65072C189808D400D912AF = {
+						DevelopmentTeam = W9P87A7WRN;
+					};
+				};
 			};
 			buildConfigurationList = 8B650728189808D400D912AF /* Build configuration list for PBXProject "Fruit" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -322,10 +327,13 @@
 		8B650751189808D500D912AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Fruit/Fruit-Prefix.pch";
 				INFOPLIST_FILE = "Fruit/Fruit-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -333,10 +341,13 @@
 		8B650752189808D500D912AF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Fruit/Fruit-Prefix.pch";
 				INFOPLIST_FILE = "Fruit/Fruit-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
